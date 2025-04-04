@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftRide - Ride Hailing Service</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans">
+    <!-- Header -->
+    <div id="header">
+      <script>
+        fetch('header.html')
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById('header').innerHTML = data;
+          });
+      </script>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-gradient bg-cover bg-center h-screen flex items-center">
+        <div class="container mx-auto px-4">
+          <h1 class="text-4xl font-bold text-white mb-4">Go Anywhere with SwiftRide</h1>
+          <p class="text-xl text-white mb-8">Fast, reliable rides at the tap of a button</p>
+          
+          <div class="bg-white p-6 rounded shadow-lg max-w-md">
+            <input type="text" placeholder="Enter pickup location" class="w-full p-3 mb-4 border border-gray-300 rounded">
+            <input type="text" placeholder="Enter destination" class="w-full p-3 mb-4 border border-gray-300 rounded">
+            <button class="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white p-3 rounded hover:opacity-90 transition">
+              Request Ride
+            </button>
+            <p class="text-sm mt-4 text-center text-gray-600">
+              New to SwiftRide? <a href="signup.html" class="text-blue-600 font-medium">Sign up</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
