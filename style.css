@@ -1,0 +1,42 @@
+/* Hero Section */
+.hero-gradient {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('https://images.pexels.com/photos/3611753/pexels-photo-3611753.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Mobile Menu Animation */
+.mobile-menu {
+  transition: all 0.3s ease;
+}
+
+/* Button Hover Effects */
+.btn-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Input Focus */
+input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-gradient {
+    background-position: 65% center;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Header Fetch Fallback */
+#header {
+  min-height: 80px;
+  background: white;
+}
